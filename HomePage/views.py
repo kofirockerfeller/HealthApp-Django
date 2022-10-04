@@ -33,7 +33,7 @@ def records(request):
                 "form": form
             })
     bmi = Weight / (Height*Height)
-    return render(request, "HomePage/greet.html", {
+    return render(request, "HomePage/status.html", {
         "Underweight": bmi < 18.5,
         "Healthy": bmi > 18.5 and bmi < 24.5,
         "Overweight": bmi > 25 and bmi < 29.9,
@@ -42,8 +42,8 @@ def records(request):
         }
     )
 
-def greet(request, name):
-    return render(request, "HomePage/greet.html", {
+def status(request, name):
+    return render(request, "HomePage/status.html", {
         "name": name.capitalize()
     })
 
