@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'HomePage/inputhealth.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>healthapp</title>
+</head>
+<body>
+    
+    <form class="form" id="form" action="{% url 'records' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+               
+        
+        <input type="submit" id="submit">
+    </form>
+
+        
+</body>
+</html>
