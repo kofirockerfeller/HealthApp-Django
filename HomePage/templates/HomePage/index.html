@@ -1,12 +1,78 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{% static 'HomePage/homepage.css' %}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hey User...welcome to your personalised health app</h1>
+    <h1>Welcome to your personalised health app</h1>
+    
+    <div class="boxesContainer">
+        <div class="cardBox">
+            <div class="card">
+                <div class="front">
+                    <h3>Update Records</h3>
+                    <p>Hover to update your current health records</p>
+                    
+
+                </div>
+                <div class="back">
+                    <h3>Back side one</h3>
+                    <p>Content in card one</p>
+                    <a href="{% url 'bmi' %}">Update Records</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardBox">
+            <div class="card">
+                <div class="front">
+                    <h3>View Health Status</h3>
+                    <p>Hover to flip</p>
+                    
+
+                </div>
+                <div class="back">
+                    <h3>Back side one</h3>
+                    <p>Content in card two</p>
+                    <a href="{% url 'bmi' %}">Update Records</a>
+                </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card">
+                <div class="front">
+                    <h3>Health Tips</h3>
+                    <p>Hover to flip</p>
+                    
+                </div>
+                <div class="back">
+                    <h3>Back side three</h3>
+                    <p>Content in card three</p>
+                    <a href="{% url 'bmi' %}">Update Records</a>
+                </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card">
+                <div class="front">
+                    <h3>Work out plans</h3>
+                    <p>Hover to flip</p>
+                    
+
+                </div>
+                <div class="back">
+                    <h3>Back side four</h3>
+                    <p>Content in card four</p>
+                    <a href="{% url 'bmi' %}">Update Records</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
